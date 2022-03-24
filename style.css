@@ -1,0 +1,283 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style-type: none;
+    line-height: 60px;
+}
+.texte{
+    left: 3%;
+    top: 40%;
+    transform: translateY(-40%);
+    width: 30%;
+    color: #707070;
+}
+.texte h2{
+    margin: 40px 0;
+}
+.texte p{
+    font-weight: bold;
+    font-size: 20px;
+}
+button{
+    padding: 8px 30px;
+    margin: 20px 20px 0 0;
+    border: none;
+    background-color: #6ab4ff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+}
+.image{
+    background: url("image/image.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.img_fixe{
+    width: 658px;
+    height: 540px;
+}
+.svg{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    display: inline-block;
+    border: solid 1px #000;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.svg::before,.svg::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 40px;background-color: #000;
+    left: 50%;
+    top: 50%;
+}
+.svg::before{
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.svg::after{
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+/*debut header*/
+header{
+    position: relative;
+    background-color: #f6f6f6;
+    height: 800px;
+    width: 100%;
+}
+nav{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: #fff;
+}
+nav *{
+    display: inline-block;
+}
+.logo{
+    padding: 8px 15px;
+    background-color: #f8f8f8;
+}
+.menu{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-20%,-50%);
+    padding: 8px 0;
+}
+.menu a{
+    padding: 0 10px;
+}
+.icones{
+    position: absolute;
+    right: 30px;
+    width: 120px;
+}
+.icones .icone{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.img1{
+    background: url("image/img1.png");
+    background-size: 100% 100%;
+}
+.img2{
+    background: url("image/img2.png");
+    background-size: 100% 100%;
+}
+.icones .svg{
+    position: absolute;
+    right: 0;
+}
+.titre{
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 30px;
+}
+.titre h1{
+    margin: 0 0 30px 0;
+    font-size: 2.5rem;
+}
+.titre > p{
+    color: #707070;
+}
+.paragraphe{
+    line-height: 30px;
+}
+.bouton{
+    padding: 10px 0;
+}
+.bouton *{
+    display: inline-block;
+}
+/*fin header*/
+
+/*debut main*/
+main{
+    position: relative;
+    margin-top: 40px;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin: 40px 0;
+}
+.big{
+    background-color: #f6f6f6;
+}
+section > *{
+    position: absolute;
+}
+article{
+    width: 400px;
+    height: 100%;
+    padding: 30px 10px 10px 10px;
+    background-color: #f6f6f6;
+}
+.carte_texte p{
+    padding: 0 0 5px 0;
+    margin-bottom: 30px;
+    border-bottom: solid 2px #000;
+}
+.titre_article{
+    font-weight: bold;
+}
+.carte_image p{
+    margin-bottom: 20px;
+    color: #707070;
+}
+.carte_image .image{
+    position: absolute;
+    width: 380px;
+    height: 270px;
+    bottom: 20px;
+    left: 10px;
+}
+section .carte2{
+    left: 50%;
+    transform: translateX(-50%);
+}
+section .carte1{
+    left: 3%;
+}
+section .carte3{
+    right: 3%;
+}
+.s2 .image{
+    width: 718px;
+    height: 100%;
+    left: 3%;
+}
+.s3{
+    height: 540px;
+}
+.s3 .image{
+    right: 3%;
+}
+.s4{
+    border-bottom: solid 1px #000;
+}
+.s4 .image{
+    right: 0px;
+    bottom: 0px;
+}
+/*fin main*/
+/*debut footer*/
+footer{
+    margin-top: 60px;
+    border-top: solid 1px #000;
+    background-color: #f6f6f6;
+}
+.list{
+    position: relative;
+    width: 90%;
+    margin-bottom: 20px;
+}
+.list > *{
+    display: inline-block;
+}
+.list ul:not(:last-child){
+    margin: 0 10% 0 2%;
+}
+.titre-list{
+    color: #000;
+    font-weight: bold;
+}
+footer li{
+    color: #707070;
+}
+.menu-footer{
+    position: relative;
+    width: 97%;
+    left: 1.5%;
+    height: 70px;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+}
+.menu-footer ul{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 100%;
+}
+.menu-footer li{
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-weight: 700;
+    width: 24%;
+    text-align: center;
+}
+.menu-footer .svg{
+    position: absolute;
+    left: 13%;
+    top: 25%;
+}
+.reseaux{
+    padding: 40px 0 60px 1.5%;
+}
+.reseaux p{
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 23px;
+    transform: translateY(-11px);
+}
+/*fin footer*/
